@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  * dennis-xlc.gitbooks.io<br>Restful Exception Handling
  * </a>
  */
-abstract class JsonExceptionMapper implements ExceptionMapper<Exception> {
+public abstract class JsonExceptionMapper implements ExceptionMapper<Exception> {
 
     private BiConsumer<Exception, ApiError> configApiError;
     private HashMap<String, Object> map;
